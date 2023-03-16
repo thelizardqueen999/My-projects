@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Compiler</title>
+    
+    
+    </h2>
+</head>
+<style>
+     h1 {
+         background-color: rgb(240, 13, 62);
+         color: rgb(16, 3, 128);
+      }
+      p {
+         font-family: arial;
+         margin-left: 10px;
+         margin-right: 10px;
+</style>
+<body>
+    <h1>Read the headlines from all sources</h1>
+    <h2>Choose your topics:</h2>
+    <form method="post" action="file:///C:/Users/Pheonix/Desktop/News%202.html">
+     <p><strong><Choose your News:</strong></p>
+        <form>
+            <p>
+                <label for="Topic">Topic</label>
+                <input type="text" id="Topic" Topic="Topic" required/>
+                <label for="button">Submit</label>
+                <input type="submit"value="Submit"/>
+              
+         </form>     
+         
+            
+<script>
+    const searchFrom = document.querySelector('.search');
+    const input = document.querySelector('.input');
+    const newList = document.querySelector('.news-list');
+
+    searchFrom.addEventListener('submit', retrieve)
+
+    function retrieve(e) {
+        e.preventDefault()
+        const apiKey = '54e54e937b0e414c991dfe8f46517ca6'
+        let topic = input.value;
+        let url =`https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}`
+        fetch(url).then((res)=>}
+            return res.json()
+    }).then((data)=>{
+        console.log(data)
+    })
+       
+    }
+    
+</body>
+
+</html>
