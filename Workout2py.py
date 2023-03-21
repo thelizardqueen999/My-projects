@@ -43,6 +43,6 @@ while repeat:
 	print (Workout)
 
 	again = input("\nWould you like to do another workout? (y/n)?")
-	if again :='y' :
+	if again =='n' :
 		repeat = False
 	print(f"Keep working towards your goal!  Goodbye.")
