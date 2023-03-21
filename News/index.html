@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Compiler</title>
+    
+    
+    
+</head>
+<style>
+     h1 {
+         background-color: rgb(240, 13, 62);
+         color: rgb(16, 3, 128);
+         text-align: center;
+      }
+      p {
+         font-family: arial;
+         margin-left: 10px;
+         margin-right: 10px;
+</style>
+<body>
+    <h1>Read the headlines from all sources</h1>
+    <h2>Choose your topics:</h2>
+    
+     <p><strong><Choose your News:</strong></p>
+        
+     <form action="https://newsapi.org/v2/everything?q=${topic}&apiKey=${apiKey}">
+        <input type="hidden" id="apiKey" name="apiKey" value="54e54e937b0e414c991dfe8f46517ca6">
+        <label for="Topic">Topic: </label>
+        <input type="text" id="Topic" name="Topic"><br><br>
+        <label for="Date">Date: </label>
+        <input type="text" id="Date" name="Date"><br><br>
+     <input type="submit" value="Submit">
+    </form>  
+         
+            
+
+<script> src="index.js"</script>
+    
+</body>
+</html>
